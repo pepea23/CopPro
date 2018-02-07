@@ -1,21 +1,54 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package animals;
 
-/**
- *
- * @author computer
- */
 public class Animals {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    private String name;
+    protected String abitility;
+    protected String rarity;
+
+    public Animals() {
     }
+
+    public Animals(String name, String abitility, String rarity) {
+        this.name = name;
+        this.abitility = abitility;
+        this.rarity = rarity;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAbitility() {
+        return abitility;
+    }
+
+    public void setAbitility(String abitility) {
+        this.abitility = abitility;
+    }
+
+    public String getRarity() {
+        return rarity;
+    }
+
+    public void setRarity(String rarity) {
+        this.rarity = rarity;
+    }
+
+    public String AbirityDescribe() {
+
+        return abitility;
+    }
+
+    @Override
+    public String toString() {
+        return "Animals{" + "name=" + name + ", abitility=" + abitility + ", rarity=" + rarity + '}';
+    }
+
+    
     
 }
