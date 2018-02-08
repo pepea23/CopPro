@@ -5,15 +5,33 @@ public class Animals {
     private String name;
     protected String abitility;
     protected String rarity;
+    protected double Volum;
 
     public Animals() {
+        this(null,null,null,0);
     }
 
-    public Animals(String name, String abitility, String rarity) {
+    public double getVolum() {
+        return Volum;
+    }
+
+    public void setVolum(double Volum) {
+        this.Volum = Volum;
+    }
+
+    public double Volum() {
+        return Volum;
+    }
+   
+
+    public Animals(String name, String abitility, String rarity, double Volum) {
         this.name = name;
         this.abitility = abitility;
         this.rarity = rarity;
+        this.Volum = Volum;
     }
+
+    
 
     public String getName() {
         return name;
@@ -49,6 +67,4 @@ public class Animals {
         return "Animals{" + "name=" + name + ", abitility=" + abitility + ", rarity=" + rarity + '}';
     }
 
-    
-    
 }
